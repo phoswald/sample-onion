@@ -1,0 +1,4 @@
+1|unclebobmartin|Write clean code!
+2|unclebobmartin|Choose names carefully!
+3|1ovthafew|Hibernate rocks!
+4|philip|#onion rocks!
