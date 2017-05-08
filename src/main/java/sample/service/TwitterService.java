@@ -1,9 +1,9 @@
-package phoswald.service;
+package sample.service;
 
 import java.util.Objects;
 
-import phoswald.domain.Overview;
-import phoswald.domain.TwitterRepository;
+import sample.domain.Overview;
+import sample.domain.TwitterRepository;
 
 public class TwitterService {
 

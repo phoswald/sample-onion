@@ -1,4 +1,4 @@
-package phoswald.domain;
+package sample.domain;
 
 public class Overview {
 

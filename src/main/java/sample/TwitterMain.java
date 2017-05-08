@@ -1,8 +1,8 @@
-package phoswald;
+package sample;
 
-import phoswald.domain.TwitterRepository;
-import phoswald.persistence.TwitterRepositoryImpl;
-import phoswald.service.TwitterService;
+import sample.domain.TwitterRepository;
+import sample.persistence.TwitterRepositoryImpl;
+import sample.service.TwitterService;
 
 public class TwitterMain {
 

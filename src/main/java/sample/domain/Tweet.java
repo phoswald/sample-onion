@@ -1,4 +1,4 @@
-package phoswald.domain;
+package sample.domain;
 
 import java.util.Objects;
 import java.util.concurrent.atomic.AtomicLong;

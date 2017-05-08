@@ -1,4 +1,4 @@
-package phoswald.persistence;
+package sample.persistence;
 
 import java.io.IOException;
 import java.io.UncheckedIOException;
@@ -13,9 +13,9 @@ import java.util.Collection;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-import phoswald.domain.Tweet;
-import phoswald.domain.TwitterRepository;
-import phoswald.domain.User;
+import sample.domain.Tweet;
+import sample.domain.TwitterRepository;
+import sample.domain.User;
 
 public class TwitterRepositoryImpl implements TwitterRepository {
 

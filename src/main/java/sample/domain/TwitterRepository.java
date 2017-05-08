@@ -1,4 +1,4 @@
-package phoswald.domain;
+package sample.domain;
 
 import java.util.Collection;
 import java.util.Optional;
