@@ -25,8 +25,7 @@ public class User {
         return id;
     }
 
-    public void tweet(String text, TwitterRepository repository /* TODO: how can domain object access adapters? */) {
-        Tweet tweet = new Tweet(this, text);
-        repository.addTweet(tweet);
+    public Tweet tweet(String text) {
+        return new Tweet(this, text);
     }
 }

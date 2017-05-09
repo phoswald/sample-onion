@@ -3,7 +3,9 @@ package sample.service;
 import java.util.Objects;
 
 import sample.domain.Overview;
+import sample.domain.Tweet;
 import sample.domain.TwitterRepository;
+import sample.domain.User;
 
 public class TwitterService {
 
@@ -14,12 +16,12 @@ public class TwitterService {
     }
 
     public void overview() {
-        new Overview().dump(repository);
+        System.out.println(new Overview().build(repository.findUsers(null), repository.findTweets(null)));
     }
 
     public void tweet(String userId, String text) {
-        repository.getUser(userId).
-                orElseThrow(() -> new IllegalArgumentException("ERROR: userId=" + userId + " does not exist.")).
-                tweet(text, repository);
+        User user = repository.getUser(userId).orElseThrow(() -> new IllegalArgumentException("userId=" + userId));
+        Tweet tweet = user.tweet(text);
+        repository.addTweet(tweet);
     }
 }

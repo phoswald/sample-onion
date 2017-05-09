@@ -1,16 +1,20 @@
 package sample.domain;
 
+import java.util.Collection;
+
 public class Overview {
 
-    public void dump(TwitterRepository repository /* TODO: how can domain object access adapters? */) {
-        System.out.println("--- Users ---");
-        for(User user : repository.findUsers(null)) {
-            System.out.println(" - " + user);
+    public String build(Collection<User> users, Collection<Tweet> tweets) {
+        StringBuilder builder = new StringBuilder();
+        builder.append("--- Users ---\n");
+        for(User user : users) {
+            builder.append(" - " + user + "\n");
         }
-        System.out.println("--- Tweets ---");
-        for(Tweet tweet : repository.findTweets(null)) {
-            System.out.println(" - " + tweet);
+        builder.append("--- Tweets ---\n");
+        for(Tweet tweet : tweets) {
+            builder.append(" - " + tweet + "\n");
         }
-        System.out.println("---");
+        builder.append("---\n");
+        return builder.toString();
     }
 }
